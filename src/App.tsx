@@ -1,20 +1,17 @@
 import styled from "styled-components";
+import {Navbar} from "./components/Navbar";
 
-export const App = ()=> {
+export const App = () => {
     return (
         <Container>
-                    <h1>
-                        Patolandia 
-                    </h1>
+          <Navbar />
         </Container>
     )
 }
 
-const Container = styled.div `
-    background: url("./src/assets/patitoconflorcita.jpg");
-    width: 50rem;
-    height: 50rem;
-    h1 {
-        color: white;
-    }
+const Container = styled.div`
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
 `;
