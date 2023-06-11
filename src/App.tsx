@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import {Navbar} from "./components/Navbar";
+import { Navbar } from "./components/Navbar";
+import { FormularioRegistro } from "./components/FormularioRegistro";
 
+const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+
+console.log(clerkPubKey)
 export const App = () => {
     return (
-        <Container>
-          <Navbar />
-        </Container>
+                <Container>
+                    <Navbar />
+                    <FormularioRegistro />
+                </Container>
     )
 }
 
